@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>GAMEBOOK</title>
+    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <header id="header">
+        <h1 class="site-title">
+          <a id="logo" href="index.html">gamebook</a>
+        </h1>
+      </header>
+
+      <main>
+        <div id="mainvisual">
+          <img src="img/mainvisual.jpg" alt="mainvisual">
+        </div>
+
+        <section id="index">
+          <div class="inner">
+            <h2 class="section-title">INDEX</h2>
+            <ol class="index-list">
+              <li>駆け出しのプログラマーの著者がWebサイト作成の練習で作成しました。</li>
+              <li>文章を読み進め選択肢の番号にリンクから飛んでください。</li>
+              <li>習作のため、テキストの内容はWikipediaの記事から引用しています。</li>
+            </ol>
+          </div>
+        </section>
+
+        <section id="detail">
+          <div class="inner">
+            <h2 class="section-title">DETAIL</h2>
+                          <img class="img" src="img/detail.jpg" alt="">
+            <div class="content">
+              <div class="text">
+                <p class="title">アドベンチャーブック</p>
+                <ol class="index-list">
+                  <li>君の目の前には先祖伝来の箱がある。なんとかして開けたいが開け方が分からない。箱には2つのスイッチのようなものがついている。</li>
+                    <ul>
+                      <li>赤いスイッチを押す</li><a class="link" href="#s3">→3へ</a>
+                      <li>青いスイッチを押す</li><a class="link" href="#s4">→4へ</a>
+                      <li>何もしない</li><a class="link" href="#s5">→5へ</a>
+                    </ul>
+                  <li id="s2">それは毒矢だった。君は薄れ行く意識の中で自らの不運を呪った。 <strong>fin.</strong></li>
+                  <li id="s3">赤いスイッチを思いっきり押してみた。その瞬間、箱の中から何かが飛び出してきた。サイコロを1つ振れ。</li>
+                    <ul>
+                      <li>1の目が出たなら</li><a class="link" href="#s6">→6へ</a>
+                      <li>それ以外の目が出たなら</li><a class="link" href="#s7">→7へ</a>
+                    </ul>
+                  <li id="s4">青いスイッチを押してみた。蓋が開き中から古びた紙が現れた</li>
+                    <ul>
+                      <li>もう少し箱の中を調べる</li><a class="link" href="#s8">→8へ</a>
+                      <li>紙を調べる</li><a class="link" href="#s9">→9へ</a>
+                    </ul>
+                  <li id="s5">君は何もしないことに決め、箱をクローゼットにしまい込んだ。この箱はその後開けられる事はなく忘れ去られていった。<strong>fin.</strong></li>
+                  <li id="s6">それは君の上着のボタンにあたり、跳ね返った。どうやら毒矢だったらしい。九死に一生を得た君は、</li>
+                    <ul>
+                      <li>青いスイッチを押す</li><a class="link" href="#s4">→4へ</a>
+                      <li>何もしない</li><a class="link" href="#s5">→5へ</a>
+                    </ul>
+                  <li id="s7">それは君の首筋をかすめていった。</li>
+                    <ul>
+                      <a class="link" href="#s2">→2へ</a>
+                    </ul>
+                  <li id="s8">箱の中をよく調べている内に、指先に激痛が走った。慌てて手を引っ込めて中をのぞき込むと細い針のようなものが見える。</li>
+                    <ul>
+                      <a class="link" href="#s2">→2へ</a>
+                    </ul>
+                  <li id="s9">それは、かつて徳川家が隠した財宝のありかを示す地図だった。1年後、財宝を手に入れた君は優雅な余生を送る事になった。<strong>fin.</strong></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="footer">
+        <p class="inner">&copy; 2023 GAMEBOOK</p>
+      </footer>
+    </div>
+  </body>
+</html>
